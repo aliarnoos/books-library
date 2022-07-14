@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Books Library</title>
+</head>
+<body>
+    <div class="container">
+        <header></header>
+        <main>
+            <div class="add-new">
+                <button onclick="openPopUp()" id="new-btn">Add New Book</button>
+            </div>
+            <div class="bgc"></div>
+            <div class="input-popup">
+                    <input type="text" id="title" placeholder="Book Title">
+                    <input type="text" id="author" placeholder="Author">
+                    <input type="text" id="pages" placeholder="Number of Pages">
+                    <label for="read">Have you read this book?</label>
+                    <select Name="read" id="read">  
+                        <option selected> Read </option>  
+                        <option> Not Read </option>  
+                    </select>  
+                    <button id="add" onclick="closePopUp()">Add to Library</button>
+            </div>
+            <div class="card-box">
+                <div class="cards">
+                </div>           
+            </div>
+        </main>
+        <footer></footer>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
